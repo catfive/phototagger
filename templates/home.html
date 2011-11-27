@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<h1>Latest Photos</h1>
+	{% for photo in photos %}
+		<div class="photo">
+			<form method="post">
+				{% csrf_token %}
+				<img src="{{ photo.thumb }}"/>
+				<div class="fields">
+					<div class="tri"></div>
+					<a class="close" href="javascript:;">X</a>
+					{% for field in photo.form %}
+						{{ field.label_tag }}
+						{{ field }}
+					{% endfor %}
+					<input type="submit"/>	
+				</div>
+			</form>
+		</div>
+	{% endfor %}
+{% endblock content %}

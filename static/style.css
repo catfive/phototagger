@@ -1,0 +1,88 @@
+body{
+	background: #494949;
+	font-family: Helvetica;
+	margin: 20px;
+}
+
+h1{
+	color: #999;
+	border-bottom: 2px solid #999;
+	padding: 10px 0;
+}
+
+form{
+	margin: 0;
+}
+
+img{
+	box-shadow: 5px 5px 20px #333;
+}
+
+div.photo{
+	margin: 0 25px 25px 0;
+	padding: 5px;
+	float: left;
+	-webkit-border-radius: 5px;
+	border: 5px solid #494949;
+}
+
+input.title{
+	font-size: 1.5em;
+	width: 100%;
+	padding-right:0;
+	border-width: 0;
+	display: block;
+	margin: 0;
+}
+a.close{
+	display: block;
+	float: right;
+	background: #666;
+	color: #ccc;
+	padding: 2px;
+	width:15px;
+	height: 15px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-border-radius:100%;
+	margin-top: -4px;
+	margin-bottom: 5px;
+}
+a.close:hover{
+	background: #888;
+}
+div.fields{
+	display: none;
+	position: absolute;
+	background: #333;
+	color: #ccc;
+	font-size: .8em;
+	padding: 10px;
+	opacity: .9;
+	-webkit-border-radius: 10px;
+}
+
+div.fields textarea{
+	display:none;
+}
+
+input, label{
+	display: block;
+}
+
+label{
+	margin-top: 5px;
+}
+input{
+	margin-bottom: 5px;
+}
+div.tri{
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-right: 20px solid #333;
+	border-bottom: 20px solid transparent;
+	margin-left: -30px;
+	margin-top: 20px;
+	float: left;
+}
